@@ -8,8 +8,10 @@ const JUMPFORCE = -500
 func _physics_process(delta):
 	if Input.is_action_pressed("right"):
 		velocity.x = SPEED
+		$AnimatedSprite.flip_h = false
 	elif Input.is_action_pressed("left"):
 		velocity.x = -SPEED
+		$AnimatedSprite.flip_h = true
 	if Input.is_action_pressed("Jump"):
 		$AnimatedSprite.play("Jump")
 	if is_on_floor():
@@ -17,24 +19,29 @@ func _physics_process(delta):
 			velocity.y = JUMPFORCE
 		if Input.is_action_pressed("right"):
 			$AnimatedSprite.play("Run")
-			$AnimatedSprite.flip_h = false
 		elif Input.is_action_pressed("left"):
 			$AnimatedSprite.play("Run")
-			$AnimatedSprite.flip_h = true
 		else: 
 			$AnimatedSprite.play("Idle")
-	elif velocity.y > 45:
+	elif velocity.y > 100:
 		$AnimatedSprite.play("Fall")
+	if is_on_wall():
+		if Input.is_action_just_pressed("Jump"):
+			velocity.y = JUMPFORCE
 	
 	#if !is_on_floor():
 	if velocity.y < 1000:
 		velocity.y += GRAVITY
 	
 	
-	print(velocity.y)
+	#print(velocity.y)
 	
 		
 		
 	velocity = move_and_slide(velocity, Vector2.UP)
 	
 	velocity.x = lerp(velocity.x,0,0.25)
+
+
+func _on_Fallzone_body_entered(body):
+	get_tree().change_scene("res://Level1.tscn")
