@@ -6,7 +6,7 @@ const SPEED = 180
 const GRAVITY = 26.23
 const JUMPFORCE = -500
 
-SceneTreeTimer
+
 
 func _physics_process(delta):
 	if Input.is_action_pressed("right"):
@@ -52,6 +52,6 @@ func _on_Fallzone_body_entered(body):
 func add_coin():
 	coins += 1
 	print("I now have %s coins" % coins)
-	if coins == 3: 
+	if coins == 34: 
 		
 		get_tree().change_scene("res://Level1.tscn")

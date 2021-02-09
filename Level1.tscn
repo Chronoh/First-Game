@@ -124,6 +124,10 @@ shape = SubResource( 5 )
 
 [node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_mirroring = Vector2( 680, 616 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/Sky"]
 scale = Vector2( 2, 2 )
@@ -131,11 +135,12 @@ texture = ExtResource( 6 )
 centered = false
 
 [node name="Clouds" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( -5.00708, -388.851 )
+position = Vector2( -9.17798, -344.503 )
 motion_scale = Vector2( 0.3, 0.3 )
 motion_mirroring = Vector2( 680, 0 )
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_lock_": true
 }
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/Clouds"]
@@ -144,11 +149,12 @@ texture = ExtResource( 10 )
 centered = false
 
 [node name="Mountains" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( -7.13525, -421.794 )
+position = Vector2( -4.76208, -377.347 )
 motion_scale = Vector2( 0.4, 0.35 )
 motion_mirroring = Vector2( 680, 0 )
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_lock_": true
 }
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/Mountains"]
@@ -161,7 +167,8 @@ position = Vector2( -4.76208, -344.503 )
 motion_scale = Vector2( 0.8, 0.7 )
 motion_mirroring = Vector2( 680, 0 )
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_lock_": true
 }
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/Far-Tree"]
@@ -170,11 +177,12 @@ texture = ExtResource( 7 )
 centered = false
 
 [node name="Close-Tree" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( -9.17798, -321.145 )
+position = Vector2( 81.5363, -261.929 )
 motion_scale = Vector2( 0.95, 0.9 )
 motion_mirroring = Vector2( 680, 0 )
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_lock_": true
 }
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/Close-Tree"]
@@ -187,7 +195,8 @@ position = Vector2( -6.54163, 118.947 )
 motion_scale = Vector2( 1, 0.99 )
 motion_mirroring = Vector2( 680, 0 )
 __meta__ = {
-"_edit_group_": true
+"_edit_group_": true,
+"_edit_lock_": true
 }
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/Closest-Tree"]
@@ -231,9 +240,96 @@ shape = SubResource( 6 )
 [node name="Coin" parent="." instance=ExtResource( 13 )]
 position = Vector2( 1649.07, -54.9773 )
 
+[node name="Coin15" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1810.97, -295.516 )
+
+[node name="Coin16" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1834.13, -295.516 )
+
+[node name="Coin17" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2412.68, -102.392 )
+
 [node name="Coin2" parent="." instance=ExtResource( 13 )]
 position = Vector2( 1622.69, -54.9773 )
 
 [node name="Coin3" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1598.1, -54.9773 )
+position = Vector2( 1599.36, -54.9773 )
+
+[node name="Coin21" parent="." instance=ExtResource( 13 )]
+position = Vector2( 853.487, 272.602 )
+
+[node name="Coin26" parent="." instance=ExtResource( 13 )]
+position = Vector2( 873.645, 609.001 )
+
+[node name="Coin22" parent="." instance=ExtResource( 13 )]
+position = Vector2( 563.705, 229.765 )
+
+[node name="Coin25" parent="." instance=ExtResource( 13 )]
+position = Vector2( 418.814, 543.485 )
+
+[node name="Coin23" parent="." instance=ExtResource( 13 )]
+position = Vector2( 164.597, 227.245 )
+
+[node name="Coin24" parent="." instance=ExtResource( 13 )]
+position = Vector2( 142.891, 227.245 )
+
+[node name="Coin18" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1535.54, 556.814 )
+
+[node name="Coin19" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1509.16, 556.814 )
+
+[node name="Coin20" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1484.57, 556.814 )
+
+[node name="Coin27" parent="." instance=ExtResource( 13 )]
+position = Vector2( 983.698, 899.513 )
+
+[node name="Coin28" parent="." instance=ExtResource( 13 )]
+position = Vector2( 957.318, 899.513 )
+
+[node name="Coin29" parent="." instance=ExtResource( 13 )]
+position = Vector2( 932.728, 899.513 )
+
+[node name="Coin30" parent="." instance=ExtResource( 13 )]
+position = Vector2( 155.528, 854.167 )
+
+[node name="Coin31" parent="." instance=ExtResource( 13 )]
+position = Vector2( 129.148, 854.167 )
+
+[node name="Coin32" parent="." instance=ExtResource( 13 )]
+position = Vector2( 104.558, 854.167 )
+
+[node name="Coin4" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2323.67, 184.698 )
+
+[node name="Coin5" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2225.43, 184.698 )
+
+[node name="Coin6" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2292.96, 184.698 )
+
+[node name="Coin7" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2191.9, 184.698 )
+
+[node name="Coin8" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2157.09, 184.698 )
+
+[node name="Coin9" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2258.76, 184.698 )
+
+[node name="Coin12" parent="." instance=ExtResource( 13 )]
+position = Vector2( 3563.74, 640.444 )
+
+[node name="Coin13" parent="." instance=ExtResource( 13 )]
+position = Vector2( 3549.37, 640.444 )
+
+[node name="Coin14" parent="." instance=ExtResource( 13 )]
+position = Vector2( 3535.14, 640.444 )
+
+[node name="Coin10" parent="." instance=ExtResource( 13 )]
+position = Vector2( 1931.76, 160.198 )
+
+[node name="Coin11" parent="." instance=ExtResource( 13 )]
+position = Vector2( 2183.76, 370.209 )
 [connection signal="body_entered" from="Fallzone" to="Character" method="_on_Fallzone_body_entered"]
